@@ -1,0 +1,164 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+#map {
+    position: relative;
+   /*Adjust according to the height of the top-panel */
+    width: 100%;    
+    height: 80vh;
+    left: 0;
+}
+#top-panel {
+    background-color: #414141;
+    padding: 5px;
+    position: relative; /* Ensure it's above the map */
+    height: 3vh; /* Customize this value as needed */
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Aligns horizontally */
+    align-items: center; 
+}
+#panel-2 {
+    background-color: #1d1d1d;
+    padding: 0px;
+    border-bottom: 1px solid #ccc;
+    position: relative; /* Ensure it's above the map */
+    height: 4vh; /* Customize this value as needed */
+    width: 100%;
+    justify-content: space-between; 
+    display: flex;
+   }
+#footer-panel {
+    background-color: #1d1d1d;
+    padding: 0px;
+    top:89vh;
+    position: absolute; /* Ensure it's above the map */
+    width: 100%;
+    height: 3vh;
+    display: flex;
+    justify-content: center; /* Aligns horizontally */
+    align-items: center; 
+    z-index: 1000;
+}
+select {
+    width: auto;
+    padding: 4px;
+    border-radius:  30px;
+    border: 1px solid #6c5959;
+    height: auto;
+    font-size: 17px;
+    text-align: center;
+}
+select:hover {
+    background-color: #d4d4a6;
+}
+/* General styling for the layer control */
+.leaflet-control-layers {
+    background-color: rgba(236, 234, 214, 0.868); /* White with 50% opacity */
+    border: 2px solid #c52222;
+    border-radius: 5;
+    box-shadow: 0 1px 5px rgb(190, 132, 132);
+}
+
+/* Styling for the layer control checkboxes */
+.leaflet-control-layers-selector {
+    margin-right: 3px;
+}
+/* Styling for layer control separators */
+.leaflet-control-layers-separator {
+    height: 1px;
+    background-color: #eeeeee;
+    margin: 2px 0;
+}
+/* Styling for layer control labels */
+.leaflet-control-layers label {
+    display:block;
+    color: rgb(43, 43, 199);
+    font-size: 22px;
+    padding: 2px 0;
+}
+/* Hover effect for labels */
+.leaflet-control-layers label:hover {
+    background-color: #abb9f8;
+    border-radius: 15px;
+    color: rgb(247, 226, 223);
+}
+/* Styling for the layer control when expanded */
+.leaflet-control-layers-expanded {
+    width: auto; /* Ad justed width */
+    padding: 3px;
+}
+/* Ensure your selector is specific enough */
+#map .leaflet-control-zoom-in, 
+#map .leaflet-control-zoom-out {
+    width: 45px;
+    height: 45px;
+    background-color: #d4d4a6;
+    border: 2px solid #000;
+    line-height: 45px;
+}
+/* Target the pseudo-elements specifically */
+
+/* Hover effect */
+#map .leaflet-control-zoom-in:hover,
+#map .leaflet-control-zoom-out:hover {
+    background-color: #d1d172;
+}
+/* Custom CSS to increase the size of the Locate button */
+/* Increase the size of the Locate Control button */
+#map .leaflet-control-locate a {
+    width: 45px; /* Increase the width */
+    height: 45px; /* Increase the height */
+    background-size: 45px 45px; /* Adjust if the icon is a background image */
+    }
+
+/* Adjust line height for vertical alignment, if necessary */
+#map .leaflet-control-locate a {
+    line-height: 65px;
+}
+
+.labelstyle {
+    background-color: transparent; 
+    border: none; 
+    box-shadow: none;
+    color: #ffeb50;
+    font-size: 22px;
+   }
+.mustateel {
+    background-color: transparent; 
+    border: none; 
+    box-shadow: none;
+    color: #3eff0d;
+    font-size: 25px;
+    font-weight: bold; /* Make it bold */
+   } 
+.leaflet-popup-content-wrapper {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #ff0c04;
+    border-radius: 1px;
+}
+h4 {
+    padding: 1px;             /* Adds some space around the text */
+    color: rgb(31, 39, 128);/* Text color */
+    max-width: fit-content;    /* Makes the background color fit the text width */
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+h3 {
+    padding: 1px;             /* Adds some space around the text */
+    color: rgb(255, 255, 255); /* Text color */
+    text-align: center;     /* Centers the headline horizontally */
+}
+.north-arrow {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 10vh;  /* Adjust size as needed */
+    width: 10vh;   /* Adjust size as needed */
+    background-image: url('../Images/north.png');
+    background-size: cover;
+    z-index: 1000;
+}
