@@ -49,7 +49,7 @@ function customSort(array) {
 // Example usage
 
 
-var data = ["55 DB","59 DB","60 DB","61 DB","62 DB","90 DB","91 DB","100 DB","101 DB","103 DNB","104 DNB","108 DB","109 DB","114 DB","115 DB","116 DB","53 DB","50 DB","47 DB","88 DB","89 DB","91-A DB","93 DB","94 DB","102 DB","39 DB","40 DB","45 DB","46 DB","63 DB","64 DB","65 DB","68 DB","69 DB","70 DB","72 DB","86 DB","87 DB","104 DB","105 DB","103 DB","106 DB","107 DB","140 DB","39 DNB","48 DNB","29 DNB","47 DNB","23 DNB","22 DNB","5 DNB","4 DNB","117 DB","116 DNB","17 DNB", "35 DNB", "112 DNB","113 DNB","110 DB","56-A DB","56 DB","57 DB","58 DB","111 DB","112 DB","113 DB","114 DNB"]; // Your predefined array
+var data = ["54 DB","55 DB","59 DB","60 DB","61 DB","62 DB","90 DB","91 DB","100 DB","101 DB","103 DNB","104 DNB","108 DB","109 DB","114 DB","115 DB","116 DB","53 DB","50 DB","47 DB","88 DB","89 DB","91-A DB","93 DB","94 DB","102 DB","39 DB","40 DB","45 DB","46 DB","63 DB","64 DB","65 DB","68 DB","69 DB","70 DB","72 DB","86 DB","87 DB","104 DB","105 DB","103 DB","106 DB","107 DB","140 DB","39 DNB","48 DNB","29 DNB","47 DNB","23 DNB","22 DNB","5 DNB","4 DNB","117 DB","116 DNB","17 DNB", "35 DNB", "112 DNB","113 DNB","110 DB","56-A DB","56 DB","57 DB","58 DB","111 DB","112 DB","113 DB","114 DNB"]; // Your predefined array
 let chakNames=customSort(data);
 var currentLayer = null;
 var Murabba_Layer = null;
