@@ -22,9 +22,13 @@ L.control
     position: "topleft",
     strings: {
       title: "Show My Location"
+    },
+    locateOptions: {
+      enableHighAccuracy: true
     }
   })
   .addTo(map);
+
 
 function customSort(array) {
     return array.sort((a, b) => {
@@ -93,7 +97,7 @@ document.getElementById('chak-dropdown').addEventListener('change', function(e) 
             
             
             // Clear and populate second dropdown
-            var Murabba_NoDropdown = document.getElementById('Murabba_No-dropdown');
+var Murabba_NoDropdown = document.getElementById('Murabba_No-dropdown');
 Murabba_NoDropdown.innerHTML = '<option>Select Muraba</option>';
 
 // Collect all Murabba_No values into an array
